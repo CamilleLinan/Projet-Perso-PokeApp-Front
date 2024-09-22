@@ -1,14 +1,11 @@
 import { FC } from 'react';
-import useFetchFirstGen from '../hooks/fetchFirstGen.hook';
+import DisplayPokemons from '../components/home/DisplayPokemon/DisplayPokemons';
 
 const Home: FC = () => {
-    const { pokemonsData } = useFetchFirstGen();
-    console.log(pokemonsData);
-
   return (
-    <p>
-      Home
-    </p>
+    <>
+      <DisplayPokemons />
+    </>
   );
 };
 
